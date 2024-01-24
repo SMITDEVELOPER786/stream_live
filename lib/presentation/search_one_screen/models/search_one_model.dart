@@ -1,0 +1,9 @@
+import '../../../core/app_export.dart';import 'musicvibescomponent_item_model.dart';import 'hotboyscrewcomponent_item_model.dart';import 'searchone_item_model.dart';/// This class defines the variables used in the [search_one_screen],
+/// and is typically used to hold data that is passed between different parts of the application.
+class SearchOneModel {Rx<List<MusicvibescomponentItemModel>> musicvibescomponentItemList = Rx([MusicvibescomponentItemModel(musicVibesImage:ImageConstant.imgRectangle83.obs,musicVibesText: "Music Vibes".obs),MusicvibescomponentItemModel(musicVibesImage:ImageConstant.imgRectangle8364x73.obs,musicVibesText: "Soccer".obs),MusicvibescomponentItemModel(musicVibesImage:ImageConstant.imgRectangle831.obs,musicVibesText: "Meet me".obs),MusicvibescomponentItemModel(musicVibesImage:ImageConstant.imgRectangle832.obs,musicVibesText: "Interactive".obs),MusicvibescomponentItemModel(musicVibesImage:ImageConstant.imgRectangle833.obs,musicVibesText: "Shine".obs)]);
+
+Rx<List<HotboyscrewcomponentItemModel>> hotboyscrewcomponentItemList = Rx([HotboyscrewcomponentItemModel(hotBoysCrewImage:ImageConstant.imgRectangle81.obs,hotBoysCrewText: "Hot boys Crew".obs,closeImage:ImageConstant.imgClose16x16.obs,communityText: "This community is to make everyo ...".obs,membersText: "120k members".obs),HotboyscrewcomponentItemModel(hotBoysCrewImage:ImageConstant.imgRectangle8181x88.obs,communityText: "This community is to make everyo ...".obs,membersText: "10k members".obs),HotboyscrewcomponentItemModel(hotBoysCrewImage:ImageConstant.imgRectangle811.obs,hotBoysCrewText: "Earn and win".obs,closeImage:ImageConstant.imgClose16x16.obs,communityText: "This community is to make everyo ...".obs,membersText: "10k members".obs)]);
+
+Rx<List<SearchoneItemModel>> searchoneItemList = Rx([SearchoneItemModel(rectangle:ImageConstant.imgRectangle111.obs),SearchoneItemModel(rectangle:ImageConstant.imgRectangle112.obs)]);
+
+ }
