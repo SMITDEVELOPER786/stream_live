@@ -40,13 +40,13 @@ class _CustomBottomBarState extends State<CustomBottomBar> {
     BottomMenuModel(
       icon: ImageConstant.imgThumbsUpBlueGray400,
       activeIcon: ImageConstant.imgThumbsUpBlueGray400,
-      title: "lbl_stream".tr,
+      title: "Stream".tr,
       type: BottomBarEnum.Connect,
     ),
     BottomMenuModel(
       icon: ImageConstant.imgLock,
       activeIcon: ImageConstant.imgLock,
-      title: "lbl_connect".tr,
+      title: "Profile".tr,
       type: BottomBarEnum.Profile,
     ),
   ];

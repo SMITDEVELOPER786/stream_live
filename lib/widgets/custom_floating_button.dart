@@ -69,4 +69,8 @@ extension FloatingButtonStyleHelper on CustomFloatingButton {
         color: appTheme.blueGray5001,
         borderRadius: BorderRadius.circular(24.h),
       );
+        static BoxDecoration get fillLightBlue => BoxDecoration(
+        color: appTheme.lightBlue500,
+        borderRadius: BorderRadius.circular(32.h),
+      );
 }

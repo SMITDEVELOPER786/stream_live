@@ -126,7 +126,7 @@ final Map<String, String> enUs = {
   "lbl_love_tree_2": "Love tree (2)",
   "lbl_opal_22": "Opal (22)",
   "lbl_ornaz_17": "Ornaz (17)",
-  "msg_precious_bag_1": "Precious bag (1)",
+  "msg_precious_bag_1": "Precious",
 
   // SEARCH One Screen
   "lbl_april_sexy": "April Sexy",

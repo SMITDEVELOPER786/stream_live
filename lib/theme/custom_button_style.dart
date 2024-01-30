@@ -4,11 +4,40 @@ import 'package:flutter/material.dart';
 
 /// A class that offers pre-defined button styles for customizing button appearance.
 class CustomButtonStyles {
+  static ButtonStyle get outlineLightBlueTL7 => OutlinedButton.styleFrom(
+        backgroundColor: appTheme.lightBlue500,
+        side: BorderSide(
+          color: appTheme.lightBlue500,
+          width: 1,
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(7.h),
+        ),
+      );
   // Filled button style
   static ButtonStyle get fillBlackB => ElevatedButton.styleFrom(
         backgroundColor: appTheme.black900B2,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15.h),
+        ),
+      );
+ static ButtonStyle get fillYellow => ElevatedButton.styleFrom(
+        backgroundColor: appTheme.yellow90001,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10.h),
+        ),
+      );
+
+static ButtonStyle get fillTeal => ElevatedButton.styleFrom(
+        backgroundColor: appTheme.teal600,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10.h),
+        ),
+      );
+       static ButtonStyle get fillWhiteA => ElevatedButton.styleFrom(
+        backgroundColor: appTheme.whiteA70001,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(6.h),
         ),
       );
 

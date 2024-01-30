@@ -3,6 +3,7 @@ import 'package:muhammad_zubair_s_application3/presentation/chat_price_screen/ch
 import 'package:muhammad_zubair_s_application3/presentation/help_and_feedback_screen/help_and_feedback_screen.dart';
 import 'package:muhammad_zubair_s_application3/presentation/level_screen/level_screen.dart';
 import 'package:muhammad_zubair_s_application3/presentation/mall_screen/mall_screen.dart';
+import 'package:muhammad_zubair_s_application3/presentation/mall_tab_container_screen/mall_tab_container_screen.dart';
 import 'package:muhammad_zubair_s_application3/presentation/messages_screen/messages_screen.dart';
 import 'package:muhammad_zubair_s_application3/presentation/my_profile_one_screen/my_profile_one_screen.dart';
 import 'package:muhammad_zubair_s_application3/presentation/my_profile_tab_container_screen/my_profile_tab_container_screen.dart';
@@ -342,36 +343,42 @@ class PersonalPage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 15.v),
-                  // Padding(
-                  //   padding: EdgeInsets.only(left: 21.h),
-                  //   child: Row(
-                  //     children: [
-                  //       CustomIconButton(
-                  //         height: 36.adaptSize,
-                  //         width: 36.adaptSize,
-                  //         padding: EdgeInsets.all(10.h),
-                  //         decoration: IconButtonStyleHelper.fillBlue,
-                  //         child: Center(child: Icon(Icons.support_agent_sharp,size: 16,color: Colors.black,))
-                  //       ),
-                  //       Padding(
-                  //         padding: EdgeInsets.only(
-                  //           left: 8.h,
-                  //           top: 10.v,
-                  //           bottom: 8.v,
-                  //         ),
-                  //         child: Text(
-                  //           "lbl_agency".tr,
-                  //           style: TextStyle(
-                  //             color: appTheme.gray80002,
-                  //             fontSize: 14.fSize,
-                  //             fontFamily: 'Inter',
-                  //             fontWeight: FontWeight.w500,
-                  //           ),
-                  //         ),
-                  //       ),
-                  //     ],
-                  //   ),
-                  // ),
+                  GestureDetector(
+                    onTap: (){
+                           Get.lazyPut(() => AgencyScreen(), fenix: true);
+                  Get.to(()=>AgencyScreen());
+                    },
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 21.h),
+                      child: Row(
+                        children: [
+                          CustomIconButton(
+                            height: 36.adaptSize,
+                            width: 36.adaptSize,
+                            padding: EdgeInsets.all(10.h),
+                            decoration: IconButtonStyleHelper.fillBlue,
+                            child: Center(child: Icon(Icons.support_agent_sharp,size: 16,color: Colors.black,))
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(
+                              left: 8.h,
+                              top: 10.v,
+                              bottom: 8.v,
+                            ),
+                            child: Text(
+                              "lbl_agency".tr,
+                              style: TextStyle(
+                                color: appTheme.gray80002,
+                                fontSize: 14.fSize,
+                                fontFamily: 'Inter',
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
 
                   // SizedBox(height: 16.v),
 
@@ -516,8 +523,8 @@ class PersonalPage extends StatelessWidget {
                   SizedBox(height: 15.v),
                   GestureDetector(
                     onTap: (){
-                        Get.lazyPut(() => MallScreen(), fenix: true);
-                  Get.toNamed(AppRoutes.mallScreen);
+                        Get.lazyPut(() =>MallTabContainerScreen(), fenix: true);
+                  Get.to(()=>MallTabContainerScreen());
                     },
                     child: Padding(
                       padding: EdgeInsets.only(left: 21.h),
@@ -833,27 +840,19 @@ class PersonalPage extends StatelessWidget {
     return CustomAppBar(
         height: 58.v,
         leadingWidth: 44.h,
-        leading: AppbarLeadingImage(
-            imagePath: ImageConstant.imgArrowdownGray80002,
-            margin: EdgeInsets.only(left: 20.h, top: 16.v, bottom: 16.v),
-            onTap: () {
-              // onTapArrowLeft();
-            }),
+        leading:  GestureDetector(
+          onTap: (){
+            Get.back();
+          },
+          child: Icon(Icons.arrow_back_ios,color: Colors.black,
+          
+          ),
+        ),
         centerTitle: true,
         title: AppbarSubtitleOne(text: "".tr),
         actions: [
 
-          CustomIconButton(
-            onTap: (){
-              Get.to(()=>AgencyScreen());
-            },
-                          height: 36.adaptSize,
-                          width: 36.adaptSize,
-                          padding: EdgeInsets.all(10.h),
-                          decoration: IconButtonStyleHelper.fillBlue,
-                          child: Center(child: Icon(Icons.support_agent_sharp,size: 16,color: Colors.black,))
-                        ),
-                        SizedBox(width: 10,),
+                             SizedBox(width: 10,),
                           CustomIconButton(
                             onTap: (){
                                 Get.lazyPut(() => HelpAndFeedbackScreen(), fenix: true);

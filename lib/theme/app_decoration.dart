@@ -159,12 +159,36 @@ class AppDecoration {
           ),
         ),
       );
+
+       static BoxDecoration get outlineBlue => BoxDecoration(
+        color: appTheme.blue5005,
+        border: Border.all(
+          color: appTheme.blue5005,
+          width: 1.h,
+        ),
+      );
+      static BoxDecoration get outlineOrange10002 => BoxDecoration(
+        color: appTheme.gray90012,
+        border: Border.all(
+          color: appTheme.orange10002,
+          width: 1.h,
+        ),
+      );
+       static BoxDecoration get fillGray90012 => BoxDecoration(
+        color: appTheme.gray90012,
+      );
+       static BoxDecoration get fillBlack90066 => BoxDecoration(
+        color: appTheme.black90066,
+      );
   static BoxDecoration get fillLime10002 => BoxDecoration(
         color: appTheme.lime10002,
       );
 
         static BoxDecoration get outline7 => BoxDecoration(
         color: appTheme.orange5001,
+      );
+        static BoxDecoration get fillBlue5004 => BoxDecoration(
+        color: appTheme.blue5004,
       );
         static BoxDecoration get fillBlue10002 => BoxDecoration(
         color: appTheme.blue10002,
@@ -372,12 +396,18 @@ class AppDecoration {
   static BoxDecoration get white => BoxDecoration(
         color: theme.colorScheme.onPrimaryContainer,
       );
+      static BoxDecoration get outline5 => BoxDecoration(
+        color: appTheme.yellow90001,
+      );
 }
 
 class BorderRadiusStyle {
   // Circle borders
   static BorderRadius get circleBorder1 => BorderRadius.circular(
         1.h,
+      );
+      static BorderRadius get customBorderTL30 => BorderRadius.vertical(
+        top: Radius.circular(30.h),
       );
   static BorderRadius get circleBorder14 => BorderRadius.circular(
         14.h,

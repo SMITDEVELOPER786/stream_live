@@ -180,4 +180,8 @@ extension DropDownStyleHelper on CustomDropDown {
         borderRadius: BorderRadius.circular(10.h),
         borderSide: BorderSide.none,
       );
+        static OutlineInputBorder get fillWhiteA => OutlineInputBorder(
+        borderRadius: BorderRadius.circular(5.h),
+        borderSide: BorderSide.none,
+      );
 }

@@ -34,12 +34,14 @@ class MessagesScreen extends GetWidget<MessagesController> {
   PreferredSizeWidget _buildAppBar() {
     return CustomAppBar(
         leadingWidth: 44.h,
-        leading: AppbarLeadingImage(
-            imagePath: ImageConstant.imgArrowdownGray80002,
-            margin: EdgeInsets.only(left: 20.h),
-            onTap: () {
-              onTapArrowLeft();
-            }),
+        leading:  GestureDetector(
+          onTap: (){
+            onTapArrowLeft();
+          },
+          child: Icon(Icons.arrow_back_ios,color: Colors.black,
+          
+          ),
+        ),
         centerTitle: true,
         title: Text( "lbl_messages".tr,style: TextStyle(fontSize: 20),));
   }

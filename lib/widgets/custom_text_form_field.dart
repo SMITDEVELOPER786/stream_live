@@ -139,6 +139,22 @@ extension TextFormFieldStyleHelper on CustomTextFormField {
         borderRadius: BorderRadius.circular(25.h),
         borderSide: BorderSide.none,
       );
+       static OutlineInputBorder get fillOnPrimaryContainer => OutlineInputBorder(
+        borderRadius: BorderRadius.circular(5.h),
+        borderSide: BorderSide.none,
+      );
+
+      static OutlineInputBorder get outlineErrorContainer => OutlineInputBorder(
+        borderRadius: BorderRadius.circular(10.h),
+        borderSide: BorderSide(
+          color: theme.colorScheme.errorContainer,
+          width: 1,
+        ),
+      );
+       static OutlineInputBorder get fillTeal => OutlineInputBorder(
+        borderRadius: BorderRadius.circular(10.h),
+        borderSide: BorderSide.none,
+      );
   static OutlineInputBorder get fillBlueTL15 => OutlineInputBorder(
         borderRadius: BorderRadius.circular(15.h),
         borderSide: BorderSide.none,

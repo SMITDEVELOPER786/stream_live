@@ -96,6 +96,25 @@ class ImageConstant {
   static String imgUserLightBlue500 = '$imagePath/img_user_light_blue_500.svg';
 
   static String imgSignal = '$imagePath/img_signal.svg';
+    static String imgVectorAmberA400 = '$imagePath/img_vector_amber_a400.svg';
+  static String img156820342911890x393 =
+      '$imagePath/img_1568203_4291_1_890x393.png';
+        static String imgTwitterLogo = '$imagePath/img_twitter_logo.svg';
+
+        static String imgInstagramLogo = '$imagePath/img_instagram_logo.png';
+  static String imgGroup1000001783 = '$imagePath/img_group_1000001783.png';
+
+        static String imgUserGray90009 = '$imagePath/img_user_gray_900_09.svg';
+
+          static String img59591384Graph = '$imagePath/img_59_591384_graph.png';
+
+  static String imgVectorGray20001 = '$imagePath/img_vector_gray_200_01.svg';
+
+  static String imgGroup1000001781 = '$imagePath/img_group_1000001781.png';
+
+
+  static String imgFacebook = '$imagePath/img_facebook.svg';
+
 
   // DESCRIPTION One images
   static String imgVuesaxLinearMusic = '$imagePath/img_vuesax_linear_music.svg';
@@ -544,10 +563,24 @@ class ImageConstant {
   static String imgGroupOrange8000144x75 =
       '$imagePath/img_group_orange_800_01_44x75.png';
 
+      static String imgEllipse46932x32 = '$imagePath/img_ellipse_469_32x32.png';
+
+  static String imgEllipse4692 = '$imagePath/img_ellipse_469_2.png';
+
+  static String imgEllipse4693 = '$imagePath/img_ellipse_469_3.png';
+
+  static String imgVectorGray80006 = '$imagePath/img_vector_gray_800_06.svg';
+
+  static String imgEllipse4694 = '$imagePath/img_ellipse_469_4.png';
+
+
   // VIP Four - Tab Container images
   static String imgLovepikCom380 = '$imagePath/img_lovepik_com_380.png';
 
   static String imgPngwing2 = '$imagePath/img_pngwing_2.png';
+
+    static String imgCheckmarkOnprimary =
+      '$imagePath/img_checkmark_onprimary.svg';
 
   static String imgPngitem85921 = '$imagePath/img_pngitem_8592_1.png';
 

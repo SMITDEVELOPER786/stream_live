@@ -76,6 +76,18 @@ extension IconButtonStyleHelper on CustomIconButton {
           width: 1.h,
         ),
       );
+
+       static BoxDecoration get gradientPrimaryToAmberA => BoxDecoration(
+        borderRadius: BorderRadius.circular(18.h),
+        gradient: LinearGradient(
+          begin: Alignment(0.17, 0),
+          end: Alignment(0.66, 2),
+          colors: [
+            theme.colorScheme.primary,
+            appTheme.amberA700,
+          ],
+        ),
+      );
   static BoxDecoration get fillBlack => BoxDecoration(
         color: appTheme.black90001.withOpacity(0.5),
         borderRadius: BorderRadius.circular(20.h),
@@ -138,5 +150,10 @@ extension IconButtonStyleHelper on CustomIconButton {
   static BoxDecoration get fillBlueTL11 => BoxDecoration(
         color: appTheme.blue5002,
         borderRadius: BorderRadius.circular(11.h),
+      );
+
+       static BoxDecoration get fillGrayTL27 => BoxDecoration(
+        color: appTheme.gray90014,
+        borderRadius: BorderRadius.circular(27.h),
       );
 }

@@ -1,3 +1,8 @@
+import 'package:muhammad_zubair_s_application3/presentation/invitation_two_screen/invitation_two_screen.dart';
+import 'package:muhammad_zubair_s_application3/presentation/invite_members_screen/invite_members_screen.dart';
+import 'package:muhammad_zubair_s_application3/presentation/members_active_days_screen/members_active_days_screen.dart';
+import 'package:muhammad_zubair_s_application3/presentation/members_income_screen/members_income_screen.dart';
+
 import 'controller/agency_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:muhammad_zubair_s_application3/core/app_export.dart';
@@ -27,24 +32,42 @@ class AgencyScreen extends GetWidget<AgencyController> {
                           SizedBox(height: 16.v),
                           _buildFrame(),
                           SizedBox(height: 12.v),
-                          Padding(
-                              padding: EdgeInsets.only(left: 3.h),
-                              child: _buildLink(
-                                  imgLink: ImageConstant.imgAddUserMale,
-                                  invitationLink: "lbl_invite_members".tr)),
+                          GestureDetector(
+                            onTap: (){
+                               Get.lazyPut(() => InviteMembersScreen(), fenix: true);
+                  Get.to(()=> InviteMembersScreen());
+                            },
+                            child: Padding(
+                                padding: EdgeInsets.only(left: 3.h),
+                                child: _buildLink(
+                                    imgLink: ImageConstant.imgAddUserMale,
+                                    invitationLink: "lbl_invite_members".tr)),
+                          ),
                           SizedBox(height: 8.v),
-                          Padding(
-                              padding: EdgeInsets.only(left: 3.h),
-                              child: _buildLink(
-                                  imgLink: ImageConstant.imgLink,
-                                  invitationLink: "lbl_invitation_link".tr)),
+                      GestureDetector(
+                            onTap: (){
+                               Get.lazyPut(() => InvitationTwoScreen(), fenix: true);
+                  Get.to(InvitationTwoScreen());
+                            },
+                            child: Padding(
+                                padding: EdgeInsets.only(left: 3.h),
+                                child: _buildLink(
+                                    imgLink: ImageConstant.imgLink,
+                                    invitationLink: "lbl_invitation_link".tr)),
+                          ),
                           SizedBox(height: 8.v),
-                          Padding(
-                              padding: EdgeInsets.only(left: 3.h),
-                              child: _buildLink(
-                                  imgLink: ImageConstant.imgSalesman,
-                                  invitationLink:
-                                      "msg_members_active_days".tr)),
+                          GestureDetector(
+                            onTap: (){
+                               Get.lazyPut(() => MembersActiveDaysScreen(), fenix: true);
+                  Get.to(MembersActiveDaysScreen());
+                            },
+                            child: Padding(
+                                padding: EdgeInsets.only(left: 3.h),
+                                child: _buildLink(
+                                    imgLink: ImageConstant.imgSalesman,
+                                    invitationLink:
+                                        "msg_members_active_days".tr)),
+                          ),
                           SizedBox(height: 939.v),
                           CustomElevatedButton(
                               text: "lbl_post".tr,
@@ -59,12 +82,14 @@ class AgencyScreen extends GetWidget<AgencyController> {
     return CustomAppBar(
         leadingWidth: 44.h,
         height: 50,
-        leading: AppbarLeadingImage(
-            imagePath: ImageConstant.imgArrowdownGray80002,
-            margin: EdgeInsets.only(left: 20.h),
-            onTap: () {
-              onTapArrowLeft();
-            }),
+        leading:  GestureDetector(
+          onTap: (){
+            onTapArrowLeft();
+          },
+          child: Icon(Icons.arrow_back_ios,color: Colors.black,
+          
+          ),
+        ),
         centerTitle: true,
         title: Text("lbl_agency".tr,style: TextStyle(color: Colors.black,fontSize:23,fontWeight: FontWeight.bold),));
   }
@@ -185,9 +210,15 @@ class AgencyScreen extends GetWidget<AgencyController> {
                             child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("lbl_member_income".tr,
-                                      style: CustomTextStyles
-                                          .labelMediumOnPrimary11),
+                                  GestureDetector(
+                                    onTap: (){
+                                       Get.lazyPut(() => MembersIncomeScreen(), fenix: true);
+                  Get.to(MembersIncomeScreen());
+                                    },
+                                    child: Text("lbl_member_income".tr,
+                                        style: CustomTextStyles
+                                            .labelMediumOnPrimary11),
+                                  ),
                                   SizedBox(height: 7.v),
                                   _buildSubAgentIncome(
                                       thisWeekText: "lbl_this_week2".tr)
