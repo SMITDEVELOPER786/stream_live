@@ -1,0 +1,9 @@
+import '../fans_screen/widgets/userprofilelist_item_widget.dart';import 'controller/fans_controller.dart';import 'models/userprofilelist_item_model.dart';import 'package:flutter/material.dart';import 'package:muhammad_zubair_s_application3/core/app_export.dart';import 'package:muhammad_zubair_s_application3/widgets/app_bar/appbar_leading_image.dart';import 'package:muhammad_zubair_s_application3/widgets/app_bar/appbar_title.dart';import 'package:muhammad_zubair_s_application3/widgets/app_bar/appbar_trailing_image.dart';import 'package:muhammad_zubair_s_application3/widgets/app_bar/custom_app_bar.dart';class FansScreen extends GetWidget<FansController> {const FansScreen({Key? key}) : super(key: key);
+
+@override Widget build(BuildContext context) { return SafeArea(child: Scaffold(appBar: _buildAppBar(), body: Padding(padding: EdgeInsets.only(left: 20.h, top: 24.v, right: 20.h), child: Obx(() => ListView.separated(physics: NeverScrollableScrollPhysics(), shrinkWrap: true, separatorBuilder: (context, index) {return SizedBox(height: 12.v);}, itemCount: controller.fansModelObj.value.userprofilelistItemList.value.length, itemBuilder: (context, index) {UserprofilelistItemModel model = controller.fansModelObj.value.userprofilelistItemList.value[index]; return UserprofilelistItemWidget(model);}))))); } 
+/// Section Widget
+PreferredSizeWidget _buildAppBar() { return CustomAppBar(leadingWidth: 44.h, leading: AppbarLeadingImage(imagePath: ImageConstant.imgArrowdownGray80002, margin: EdgeInsets.only(left: 20.h), onTap: () {onTapArrowLeft();}), actions: [AppbarTitle(text: "lbl_fans".tr, margin: EdgeInsets.only(left: 20.h, top: 2.v, bottom: 2.v)), AppbarTrailingImage(imagePath: ImageConstant.imgRewindGray80002, margin: EdgeInsets.only(left: 122.h, right: 20.h))]); } 
+
+/// Navigates to the previous screen.
+onTapArrowLeft() { Get.back(); } 
+ }

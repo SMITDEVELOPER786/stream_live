@@ -1,0 +1,5 @@
+import '../../../core/app_export.dart';import 'userprofilegrid1_item_model.dart';/// This class defines the variables used in the [creator_center_page],
+/// and is typically used to hold data that is passed between different parts of the application.
+class CreatorCenterModel {Rx<List<Userprofilegrid1ItemModel>> userprofilegrid1ItemList = Rx([Userprofilegrid1ItemModel(highlightedImage:ImageConstant.imgRectangle6007.obs,checkCircleImage:ImageConstant.imgCheckcircle.obs,highlightedText: "Highlight your figure".obs),Userprofilegrid1ItemModel(highlightedImage:ImageConstant.imgRectangle6008.obs,checkCircleImage:ImageConstant.imgCheckcircle.obs,highlightedText: "High quality make-up".obs),Userprofilegrid1ItemModel(highlightedImage:ImageConstant.imgRectangle6007116x155.obs,checkCircleImage:ImageConstant.imgCloseLightBlue50024x24.obs,highlightedText: "Dark face".obs),Userprofilegrid1ItemModel(highlightedImage:ImageConstant.imgRectangle6008116x155.obs,checkCircleImage:ImageConstant.imgCloseLightBlue50024x24.obs,highlightedText: "Blocked figure".obs)]);
+
+ }
