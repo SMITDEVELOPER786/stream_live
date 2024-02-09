@@ -34,20 +34,20 @@ class _MyProfileTabContainerScreenState
         child: Scaffold(
             appBar: _buildAppBar(),
             // bottomNavigationBar: _buildTabBottomAppBar(),
-            floatingActionButton: CustomFloatingButton(
-              onTap: () {
-                Get.to(() => ExploreAlltab());
-              },
-              height: 48,
-              width: 48,
-              child: CustomImageView(
-                imagePath: ImageConstant.imgUploadGray5001,
-                height: 24.0.v,
-                width: 24.0.h,
-              ),
-            ),
-            floatingActionButtonLocation:
-                FloatingActionButtonLocation.centerDocked,
+            // floatingActionButton: CustomFloatingButton(
+            //   onTap: () {
+            //     Get.to(() => ExploreAlltab());
+            //   },
+            //   height: 48,
+            //   width: 48,
+            //   child: CustomImageView(
+            //     imagePath: ImageConstant.imgUploadGray5001,
+            //     height: 24.0.v,
+            //     width: 24.0.h,
+            //   ),
+            // ),
+            // floatingActionButtonLocation:
+            //     FloatingActionButtonLocation.centerDocked,
             body: SizedBox(
                 width: SizeUtils.width,
                 child: SingleChildScrollView(
@@ -66,6 +66,7 @@ class _MyProfileTabContainerScreenState
   /// Section Widget
   PreferredSizeWidget _buildAppBar() {
     return CustomAppBar(
+      height: 50,
         leadingWidth: 44.h,
         leading:  GestureDetector(
           onTap: (){
@@ -76,7 +77,7 @@ class _MyProfileTabContainerScreenState
           ),
         ),
         centerTitle: true,
-        title: AppbarSubtitleOne(text: "lbl_my_profile2".tr),
+        title: Text( "lbl_my_profile2".tr),
         actions: [
           AppbarTrailingImage(
               imagePath: ImageConstant.imgSettings24x24,

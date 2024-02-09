@@ -34,6 +34,7 @@ class UserFollowItemWidget extends StatelessWidget {
         child: Stack(
           alignment: Alignment.bottomCenter,
           children: [
+            // SizedBox(height: 80,),
             Align(
               alignment: Alignment.center,
               child: SizedBox(

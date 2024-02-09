@@ -69,27 +69,60 @@ class _CustomBottomBarState extends State<CustomBottomBar> {
           bottomMenuList.length, (index) {
 
           return BottomNavigationBarItem(
-            icon: CustomImageView(
-              imagePath: bottomMenuList[index].icon,
-              height: 24.adaptSize,
-              width: 24.adaptSize,
-              color: appTheme.blueGray400,
+            icon: 
+      
+            Padding(
+              padding :
+                    index ==0 ?
+               const EdgeInsets.only(right:20.0):
+               index == 1?
+                const EdgeInsets.only(right:60.0):
+                 index == 2 ?
+                  const EdgeInsets.only(left:40.0):
+                EdgeInsets.all(0)
+               ,
+              child: CustomImageView(
+                imagePath: bottomMenuList[index].icon,
+                height: 24.adaptSize,
+                width: 24.adaptSize,
+                color: appTheme.blueGray400,
+              ),
             ),
             activeIcon:  bottomMenuList[index].title =="Home" &&  controller.check==true ?  
-            CustomImageView(
-              imagePath: bottomMenuList[index].icon,
-              height: 24.adaptSize,
-              width: 24.adaptSize,
-              color: appTheme.blueGray400,
+           Padding(
+              padding :
+                    index ==0 ?
+               const EdgeInsets.only(right:20.0):
+               index == 1?
+                const EdgeInsets.only(right:60.0):
+                 index == 2 ?
+                  const EdgeInsets.only(left:40.0):
+                EdgeInsets.all(0),
+              child: CustomImageView(
+                imagePath: bottomMenuList[index].icon,
+                height: 24.adaptSize,
+                width: 24.adaptSize,
+                color: appTheme.blueGray400,
+              ),
             )
             :  Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                CustomImageView(
-                  imagePath: bottomMenuList[index].icon,
-                  height: 24.adaptSize,
-                  width: 24.adaptSize,
+                Padding(
+              padding :
+                    index ==0 ?
+               const EdgeInsets.only(right:20.0):
+               index == 1?
+                const EdgeInsets.only(right:60.0):
+                 index == 2 ?
+                  const EdgeInsets.only(left:40.0):
+                EdgeInsets.all(0),
+                  child: CustomImageView(
+                    imagePath: bottomMenuList[index].icon,
+                    height: 24.adaptSize,
+                    width: 24.adaptSize,
+                  ),
                 ),
                bottomMenuList[index].title =="Home" &&  controller.check==true ? Padding(
                   padding: EdgeInsets.only(top: 3.v),
@@ -102,8 +135,15 @@ class _CustomBottomBarState extends State<CustomBottomBar> {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                ):Padding(
-                  padding: EdgeInsets.only(top: 3.v),
+                ): Padding(
+              padding :
+                    index ==0 ?
+               const EdgeInsets.only(right:20.0):
+               index == 1?
+                const EdgeInsets.only(right:60.0):
+                 index == 2 ?
+                  const EdgeInsets.only(left:40.0):
+                EdgeInsets.all(0),
                   child: Text(
                     bottomMenuList[index].title ?? "",
                     style: TextStyle(

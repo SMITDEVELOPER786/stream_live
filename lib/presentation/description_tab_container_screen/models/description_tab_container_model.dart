@@ -13,6 +13,6 @@ class DescriptionTabContainerModel {
         videoCall: "Message".obs),
     DescriptiontabcontainerItemModel(
         videocall: ImageConstant.imgSignal.obs,
-        videoCall: "Add to favorite".obs)
+        videoCall: "Add favorite".obs)
   ]);
 }

@@ -383,6 +383,14 @@ static ButtonStyle get fillTeal => ElevatedButton.styleFrom(
           borderRadius: BorderRadius.circular(10.h),
         ),
       );
+
+   static ButtonStyle get outlineTL5 => OutlinedButton.styleFrom(
+        backgroundColor: appTheme.deepOrange90001,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(5.h),
+        ),
+      );
+
   static ButtonStyle get outlineLightBlueTL24 => OutlinedButton.styleFrom(
         backgroundColor: Colors.transparent,
         side: BorderSide(
@@ -397,5 +405,11 @@ static ButtonStyle get fillTeal => ElevatedButton.styleFrom(
   static ButtonStyle get none => ButtonStyle(
         backgroundColor: MaterialStateProperty.all<Color>(Colors.transparent),
         elevation: MaterialStateProperty.all<double>(0),
+      );
+       static ButtonStyle get outline => OutlinedButton.styleFrom(
+        backgroundColor: appTheme.gray80003,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(5.h),
+        ),
       );
 }

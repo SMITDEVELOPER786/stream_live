@@ -6,6 +6,24 @@ class AppDecoration {
   static BoxDecoration get fillBlack => BoxDecoration(
         color: appTheme.black90001.withOpacity(0.25),
       );
+        static BoxDecoration get fillBlack900 => BoxDecoration(
+        color: appTheme.black900,
+      );
+
+       static BoxDecoration get outline3 => BoxDecoration(
+        color: appTheme.black90003,
+      );
+        static BoxDecoration get fillGray90004 => BoxDecoration(
+        color: appTheme.gray90004,
+      );
+
+       static BoxDecoration get outlineOrange5003 => BoxDecoration(
+        color: appTheme.black90001,
+        border: Border.all(
+          color: appTheme.orange500,
+          width: 1.h,
+        ),
+      );
 
         static BoxDecoration get fillGray5004 => BoxDecoration(
         color: appTheme.gray5004,

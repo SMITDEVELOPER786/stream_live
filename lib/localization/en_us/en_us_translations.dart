@@ -425,6 +425,33 @@ final Map<String, String> enUs = {
   // Fans Screen
   "lbl_remove": "Remove",
 
+   // VIP One Screen
+  "lbl_gold": "Gold",
+
+  // VIP Two Screen
+  "lbl_emerald": "Emerald",
+
+  // VIP Three Screen
+  "lbl_francizes": "Francizes",
+
+  // VIP Four Screen
+  "lbl_germane": "Germane",
+
+  // VIP Four - Tab Container Screen
+  "lbl_bubble": "Bubble",
+  "lbl_effect": "Effect",
+  "lbl_vip_1": "VIP 1",
+  "lbl_vip_2": "VIP 2",
+  "lbl_vip_3": "VIP 3",
+  "lbl_vip_4": "VIP 4",
+  "lbl_vip_5": "VIP 5",
+  "msg_you_re_currently":
+      "You’re currently not a VIP member, buy any of this VIP to enjoy exclusive items",
+
+  // VIP Five Screen
+  "lbl_shephard": "Shephard",
+
+
   // Messages Screen
   "lbl_1m": "1m",
   "lbl_1m_ago": "1m ago",
@@ -459,7 +486,7 @@ final Map<String, String> enUs = {
   // Agency Screen
   "lbl_agency": "Agency",
   "lbl_invitation_link": "Invitation link",
-  "lbl_invite_members": "Invite members",
+  "lbl_invite_members": "Members Invite",
   "lbl_member_income": "Member income ",
   "lbl_target_500k": "Target: 500k",
   "lbl_this_week2": "(This week)",
@@ -696,7 +723,7 @@ final Map<String, String> enUs = {
   "lbl_9": "9",
   "lbl_900": "900",
   "lbl_add_title": "Add title",
-  "lbl_add_to_favorite": "Add to favorite",
+  "lbl_add_to_favorite": "Add favorite",
   "lbl_alesxch": "Alesxch",
   "lbl_alex_media": "Alex Media",
   "lbl_alex_vec": "Alex Vec",
@@ -704,7 +731,7 @@ final Map<String, String> enUs = {
   "lbl_australia": "Australia",
   "lbl_bard_family": "Bard Family",
   "lbl_become_vip": "Become VIP",
-  "lbl_berry": "Berry",
+  "lbl_berry": "Beans",
   "lbl_bio": "Bio",
   "lbl_bounce_king": "Bounce King",
   "lbl_buy": "Buy",

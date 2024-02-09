@@ -114,44 +114,29 @@ class ConnectFollowPage extends StatelessWidget {
                                       fontWeight: FontWeight.w500,
                                     ),
                                   ),
-                               
+                                CustomImageView(
+                                  imagePath: ImageConstant.imgLinkedinGray50015,
+                                  height: 16.adaptSize,
+                                  width: 16.adaptSize,
+                                ),
                                Text(
-                                    "1",
-                                    style: TextStyle(
-                                      color: appTheme.gray40003,
-                                      fontSize: 10.fSize,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                  ),
+                                 "United States",
+                                   style: TextStyle(
+                                     color: appTheme.gray60006,
+                                     fontSize: 10.fSize,
+                                     fontFamily: 'Inter',
+                                     fontWeight: FontWeight.w500,
+                                   
+                                 ),
+                               ),
+                                
+
                             
                               ],
                             ),
                           ),
                           SizedBox(height: 4.v),
-                          Row(
-                            children: [
-                              CustomImageView(
-                                  imagePath: ImageConstant.imgLinkedinGray50015,
-                                  height: 16.adaptSize,
-                                  width: 16.adaptSize,
-                                ),
-                             
-                              Padding(
-                                padding: EdgeInsets.only(left: 1.h),
-                                child: Text(
-                                  "United States",
-                                    style: TextStyle(
-                                      color: appTheme.gray60006,
-                                      fontSize: 10.fSize,
-                                      fontFamily: 'Inter',
-                                      fontWeight: FontWeight.w500,
-                                    
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
+                       
                         ],
                       ),
                     ),

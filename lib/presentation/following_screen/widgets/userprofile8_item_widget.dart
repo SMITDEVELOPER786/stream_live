@@ -119,7 +119,7 @@ class Userprofile8ItemWidget extends StatelessWidget {
           ),
         ),
         CustomImageView(
-          imagePath: ImageConstant.imgClose16x16,
+          imagePath: ImageConstant.fire,
           height: 16.adaptSize,
           width: 16.adaptSize,
           margin: EdgeInsets.only(

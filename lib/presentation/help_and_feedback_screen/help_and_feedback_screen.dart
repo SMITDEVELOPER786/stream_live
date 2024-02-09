@@ -37,14 +37,20 @@ class HelpAndFeedbackScreen extends GetWidget<HelpAndFeedbackController> {
     return CustomAppBar(
         height: 58.v,
         leadingWidth: 44.h,
-        leading: AppbarLeadingImage(
-            imagePath: ImageConstant.imgArrowdownGray80002,
-            margin: EdgeInsets.only(left: 20.h, top: 16.v, bottom: 16.v),
-            onTap: () {
-              onTapArrowLeft();
-            }),
+        leading: 
+        GestureDetector(
+          onTap: (){
+            onTapArrowLeft();
+          },
+          child: Icon(Icons.arrow_back_ios)),
+        // AppbarLeadingImage(
+        //     imagePath: ImageConstant.imgArrowdownGray80002,
+        //     margin: EdgeInsets.only(left: 20.h, top: 16.v, bottom: 16.v),
+        //     onTap: () {
+        //       onTapArrowLeft();
+        //     }),
         centerTitle: true,
-        title: AppbarSubtitleOne(text: "msg_help_and_feedback".tr));
+        title: Text("msg_help_and_feedback".tr));
   }
 
   /// Section Widget

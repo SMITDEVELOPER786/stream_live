@@ -1,3 +1,5 @@
+import 'package:muhammad_zubair_s_application3/presentation/call_screen/call_screen.dart';
+
 import '../controller/description_tab_container_controller.dart';
 import '../models/descriptiontabcontainer_item_model.dart';
 import 'package:flutter/material.dart';
@@ -32,10 +34,17 @@ class DescriptiontabcontainerItemWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Obx(
-            () => CustomImageView(
-              imagePath: descriptiontabcontainerItemModelObj.videocall!.value,
-              height: 24.adaptSize,
-              width: 24.adaptSize,
+            () => GestureDetector(
+              onTap: (){
+                Get.lazyPut(() => CallScreen());
+                Get.to(() => CallScreen());
+
+              },
+              child: CustomImageView(
+                imagePath: descriptiontabcontainerItemModelObj.videocall!.value,
+                height: 24.adaptSize,
+                width: 24.adaptSize,
+              ),
             ),
           ),
           SizedBox(height: 7.v),

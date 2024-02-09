@@ -61,7 +61,7 @@ class AudioLiveScreen extends GetWidget<AudioLiveController> {
     return CustomAppBar(
       height: 70.v,
       title: Container(
-        width: 190.h,
+        width: 400.h,
         margin: EdgeInsets.only(left: 20.h),
         padding: EdgeInsets.symmetric(
           horizontal: 5.h,
@@ -71,7 +71,7 @@ class AudioLiveScreen extends GetWidget<AudioLiveController> {
           borderRadius: BorderRadiusStyle.roundedBorder19,
         ),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             AppbarCircleimage(
               imagePath: ImageConstant.imgEllipse50,
@@ -88,21 +88,21 @@ class AudioLiveScreen extends GetWidget<AudioLiveController> {
                 bottom: 15.v,
               ),
             ),
-            AppbarImage(
-              imagePath: ImageConstant.imgCherries,
-              margin: EdgeInsets.only(
-                top: 16.v,
-                bottom: 2.v,
-              ),
-            ),
-            AppbarSubtitleThree(
-              text: "lbl_20_000".tr,
-              margin: EdgeInsets.only(
-                left: 3.h,
-                top: 17.v,
-                bottom: 2.v,
-              ),
-            ),
+            // AppbarImage(
+            //   imagePath: ImageConstant.imgCherries,
+            //   margin: EdgeInsets.only(
+            //     top: 16.v,
+            //     bottom: 2.v,
+            //   ),
+            // ),
+            // AppbarSubtitleThree(
+            //   text: "lbl_20_000".tr,
+            //   margin: EdgeInsets.only(
+            //     left: 3.h,
+            //     top: 17.v,
+            //     bottom: 2.v,
+            //   ),
+            // ),
             Container(
               margin: EdgeInsets.only(
                 left: 27.h,
@@ -112,9 +112,9 @@ class AudioLiveScreen extends GetWidget<AudioLiveController> {
                 horizontal: 9.h,
                 vertical: 5.v,
               ),
-              decoration: AppDecoration.gradientPrimaryToAmberA.copyWith(
-                borderRadius: BorderRadiusStyle.circleBorder14,
-              ),
+              // decoration: AppDecoration.gradientPrimaryToAmberA.copyWith(
+              //   borderRadius: BorderRadiusStyle.circleBorder14,
+              // ),
               child: AppbarImage(
                 imagePath: ImageConstant.imgPlus,
               ),
@@ -139,14 +139,14 @@ class AudioLiveScreen extends GetWidget<AudioLiveController> {
             right: 13.h,
           ),
         ),
-        AppbarSubtitleTwo(
-          text: "lbl_200".tr,
-          margin: EdgeInsets.only(
-            left: 3.h,
-            top: 13.v,
-            right: 13.h,
-          ),
-        ),
+        // AppbarSubtitleTwo(
+        //   text: "lbl_200".tr,
+        //   margin: EdgeInsets.only(
+        //     left: 3.h,
+        //     top: 13.v,
+        //     right: 13.h,
+        //   ),
+        // ),
         AppbarTrailingImage(
           imagePath: ImageConstant.imgPlus,
           margin: EdgeInsets.fromLTRB(14.h, 18.v, 33.h, 4.v),

@@ -216,6 +216,7 @@ var AsiaList= [
   /// Section Widget
   PreferredSizeWidget _buildAppBar() {
     return CustomAppBar(
+      height: 50,
         leadingWidth: 44.h,
         leading: GestureDetector(
           onTap: (){
@@ -230,7 +231,7 @@ var AsiaList= [
               ),
         ) ,
         centerTitle: true,
-        title: AppbarSubtitleOne(text: "lbl_countries".tr),
+        title: Text("Countries"),
         actions: [
           AppbarTrailingImage(
               imagePath: ImageConstant.imgRewindGray80002,

@@ -22,10 +22,12 @@ class CallScreen extends GetWidget<CallController> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+      
         extendBody: true,
         extendBodyBehindAppBar: true,
         appBar: _buildAppBar(),
         body: Container(
+          
           width: SizeUtils.width,
           height: SizeUtils.height,
           padding: EdgeInsets.only(
@@ -35,7 +37,7 @@ class CallScreen extends GetWidget<CallController> {
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage(
-                ImageConstant.imgGroup1000003916,
+                ImageConstant.imgGroup3413,
               ),
               fit: BoxFit.cover,
             ),
@@ -161,7 +163,7 @@ class CallScreen extends GetWidget<CallController> {
       height: 56.v,
       title: Container(
         // width: .h,
-        margin: EdgeInsets.only(left: 20.h),
+        // margin: EdgeInsets.only(left: 20.h),
         padding: EdgeInsets.symmetric(
           horizontal: 5.h,
           vertical: 3.v,
@@ -179,29 +181,29 @@ class CallScreen extends GetWidget<CallController> {
                 bottom: 2.v,
               ),
             ),
-            AppbarSubtitleThree(
-              text: "lbl_empress_huh".tr,
-              margin: EdgeInsets.only(
-                // left: 4.h,
-                // top: 2.v,
-                // bottom: 15.v,
-              ),
-            ),
-            AppbarImage(
-              imagePath: ImageConstant.imgCherries,
-              margin: EdgeInsets.only(
-                top: 16.v,
-                bottom: 2.v,
-              ),
-            ),
-            AppbarSubtitleThree(
-              text: "lbl_20_000".tr,
-              margin: EdgeInsets.only(
-                left: 3.h,
-                top: 17.v,
-                bottom: 2.v,
-              ),
-            ),
+            // AppbarSubtitleThree(
+            //   text: "lbl_empress_huh".tr,
+            //   margin: EdgeInsets.only(
+            //     // left: 4.h,
+            //     // top: 2.v,
+            //     // bottom: 15.v,
+            //   ),
+            // ),
+            // AppbarImage(
+            //   imagePath: ImageConstant.imgCherries,
+            //   margin: EdgeInsets.only(
+            //     top: 16.v,
+            //     bottom: 2.v,
+            //   ),
+            // ),
+            // AppbarSubtitleThree(
+            //   text: "lbl_20_000".tr,
+            //   margin: EdgeInsets.only(
+            //     left: 3.h,
+            //     top: 17.v,
+            //     bottom: 2.v,
+            //   ),
+            // ),
             Container(
               margin: EdgeInsets.only(
                 left: 27.h,
@@ -239,11 +241,12 @@ class CallScreen extends GetWidget<CallController> {
           ),
         ),
         AppbarTitle(
-          text: "lbl_200".tr,
+        
+          text: "".tr,
           margin: EdgeInsets.only(
-            left: 4.h,
-            top: 10.v,
-            right: 10.h,
+            left: 14.h,
+            top: 30.v,
+            right: 20.h,
           ),
         ),
         AppbarTrailingImage(

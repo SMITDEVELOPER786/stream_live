@@ -7,6 +7,7 @@ import '../../widgets/custom_bottom_bar.dart';
 import '../../widgets/custom_floating_button.dart';
 import '../discover_one_tab_container_screen/controller/discover_one_tab_container_controller.dart';
 import '../explore_tab_container_screen/explore_tab_container_screen.dart';
+import '../notifications_screen/notifications_screen.dart';
 import 'controller/community_one_tab_container_controller.dart';
 import 'models/community_one_tab_container_model.dart';
 import 'package:flutter/material.dart';
@@ -53,19 +54,22 @@ class CommunityOneTabContainerPage extends StatelessWidget {
           ),
         ),
            bottomNavigationBar: _buildTabBottomAppBar(),
-           floatingActionButton: CustomFloatingButton(
-             onTap: (){
-                  controllerF.setBottomIndex(0,true);
-               Get.to(()=>ExploreTabContainerScreen());
-            },
-          height: 48,
-          width: 48,
-          child: CustomImageView(
-            imagePath: ImageConstant.imgUploadGray5001,
-            height: 24.0.v,
-            width: 24.0.h,
-          ),
-        ),
+           floatingActionButton: Padding(
+           padding: const EdgeInsets.only(left:20.0,top: 20),
+             child: CustomFloatingButton(
+               onTap: (){
+                    controllerF.setBottomIndex(0,true);
+                 Get.to(()=>ExploreTabContainerScreen());
+              },
+                     height: 48,
+                     width: 48,
+                     child: CustomImageView(
+              imagePath: ImageConstant.imgUploadGray5001,
+              height: 24.0.v,
+              width: 24.0.h,
+                     ),
+                   ),
+           ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       ),
     );
@@ -143,11 +147,18 @@ class CommunityOneTabContainerPage extends StatelessWidget {
             child: Stack(
               alignment: Alignment.topRight,
               children: [
-                CustomImageView(
-                  imagePath: ImageConstant.imgBellsimpleGray80002,
-                  height: 16.adaptSize,
-                  width: 16.adaptSize,
-                  alignment: Alignment.center,
+                GestureDetector(
+                  onTap: (){
+                    Get.lazyPut(() => NotificationsScreen());
+                    Get.to(() => NotificationsScreen());
+
+                  },
+                  child: CustomImageView(
+                    imagePath: ImageConstant.imgBellsimpleGray80002,
+                    height: 16.adaptSize,
+                    width: 16.adaptSize,
+                    alignment: Alignment.center,
+                  ),
                 ),
                 Align(
                   alignment: Alignment.topRight,

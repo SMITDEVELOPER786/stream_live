@@ -1,6 +1,8 @@
 import 'package:muhammad_zubair_s_application3/presentation/discover_one_tab_container_screen/controller/discover_one_tab_container_controller.dart';
 
 import '../explore_tab_container_all_screen/explore_tab_all_container.dart';
+import '../rank_one_tab_container_screen/rank_one_tab_container_screen.dart';
+import '../search_screen/search_screen.dart';
 import 'controller/explore_tab_container_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:muhammad_zubair_s_application3/core/app_export.dart';
@@ -71,7 +73,7 @@ class _ExploreTabContainerScreenState extends State<ExploreTabContainerScreen> {
   /// Section Widget
   Widget _buildPartyRow() {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 21.h),
+      padding: EdgeInsets.symmetric(horizontal: 14.h),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.end,
@@ -85,13 +87,13 @@ class _ExploreTabContainerScreenState extends State<ExploreTabContainerScreen> {
               labelPadding: EdgeInsets.zero,
               labelColor: appTheme.lightBlue500,
               labelStyle: TextStyle(
-                fontSize: 11.fSize,
+                fontSize: 14.fSize,
                 fontFamily: 'Inter',
                 fontWeight: FontWeight.w600,
               ),
               unselectedLabelColor: appTheme.gray40002,
               unselectedLabelStyle: TextStyle(
-                fontSize: 11.fSize,
+                fontSize: 14.fSize,
                 fontFamily: 'Inter',
                 fontWeight: FontWeight.w500,
               ),
@@ -117,18 +119,27 @@ class _ExploreTabContainerScreenState extends State<ExploreTabContainerScreen> {
           ),
           Spacer(),
           CustomImageView(
+            onTap: (){
+                   Get.lazyPut(() => SearchScreen());
+                                Get.to(() => SearchScreen());
+            },
             imagePath: ImageConstant.imgRewindGray80002,
-            height: 16.adaptSize,
-            width: 16.adaptSize,
+            height: 20.adaptSize,
+            width: 20.adaptSize,
             margin: EdgeInsets.only(
               top: 6.v,
               bottom: 4.v,
             ),
           ),
+          SizedBox(width: 5,),
           CustomImageView(
+            onTap: (){
+                  Get.lazyPut(() => RankOneTabContainerScreen());
+                                Get.to(() => RankOneTabContainerScreen());
+            },
             imagePath: ImageConstant.imgRank,
-            height: 24.adaptSize,
-            width: 24.adaptSize,
+            height: 28.adaptSize,
+            width: 28.adaptSize,
             margin: EdgeInsets.only(left: 4.h),
           ),
         ],

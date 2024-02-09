@@ -125,14 +125,16 @@ class EditProfileScreen extends GetWidget<EditProfileController> {
     return CustomAppBar(
         height: 58.v,
         leadingWidth: 44.h,
-        leading: AppbarLeadingImage(
-            imagePath: ImageConstant.imgArrowdownGray80002,
-            margin: EdgeInsets.only(left: 20.h, top: 16.v, bottom: 16.v),
-            onTap: () {
-              onTapArrowLeft();
-            }),
+        leading:   GestureDetector(
+          onTap: (){
+            onTapArrowLeft();
+          },
+          child: Icon(Icons.arrow_back_ios,color: Colors.black,
+          
+          ),
+        ),
         centerTitle: true,
-        title: AppbarSubtitleOne(text: "lbl_edit_profile".tr),
+        title: Text( "lbl_edit_profile".tr),
         actions: [
           AppbarTrailingButtonTwo(
               margin: EdgeInsets.symmetric(horizontal: 20.h, vertical: 14.v))

@@ -3,6 +3,7 @@ import 'package:muhammad_zubair_s_application3/presentation/invite_members_scree
 import 'package:muhammad_zubair_s_application3/presentation/members_active_days_screen/members_active_days_screen.dart';
 import 'package:muhammad_zubair_s_application3/presentation/members_income_screen/members_income_screen.dart';
 
+import '../members_income_screen/Sub Income Screen.dart';
 import 'controller/agency_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:muhammad_zubair_s_application3/core/app_export.dart';
@@ -30,12 +31,36 @@ class AgencyScreen extends GetWidget<AgencyController> {
                           SizedBox(height: 16.v),
                           _buildYouReLevel(),
                           SizedBox(height: 16.v),
-                          _buildFrame(),
+                          // _buildFrame(),
+                          GestureDetector(
+                            onTap: () {
+                              Get.lazyPut(() => MembersSubIncomeScreen(),
+                                  fenix: true);
+                              Get.to(MembersSubIncomeScreen());
+                            },
+                            child: _buildLink(
+                              imgLink: ImageConstant.imgAddUserMale,
+                              invitationLink: "msg_sub_agent_income".tr,
+                            ),
+                          ),
                           SizedBox(height: 12.v),
                           GestureDetector(
-                            onTap: (){
-                               Get.lazyPut(() => InviteMembersScreen(), fenix: true);
-                  Get.to(()=> InviteMembersScreen());
+                            onTap: () {
+                              Get.lazyPut(() => MembersIncomeScreen(),
+                                  fenix: true);
+                              Get.to(MembersIncomeScreen());
+                            },
+                            child: _buildLink(
+                              imgLink: ImageConstant.imgAddUserMale,
+                              invitationLink: "lbl_member_income".tr,
+                            ),
+                          ),
+                          SizedBox(height: 12.v),
+                            GestureDetector(
+                            onTap: () {
+                              Get.lazyPut(() => InviteMembersScreen(),
+                                  fenix: true);
+                              Get.to(() => InviteMembersScreen());
                             },
                             child: Padding(
                                 padding: EdgeInsets.only(left: 3.h),
@@ -43,23 +68,41 @@ class AgencyScreen extends GetWidget<AgencyController> {
                                     imgLink: ImageConstant.imgAddUserMale,
                                     invitationLink: "lbl_invite_members".tr)),
                           ),
-                          SizedBox(height: 8.v),
-                      GestureDetector(
-                            onTap: (){
-                               Get.lazyPut(() => InvitationTwoScreen(), fenix: true);
-                  Get.to(InvitationTwoScreen());
+                          SizedBox(height: 12.v),
+                          GestureDetector(
+                            onTap: () {
+                              Get.lazyPut(() => InviteMembersScreen(),
+                                  fenix: true);
+                              Get.to(() => InviteMembersScreen());
                             },
                             child: Padding(
                                 padding: EdgeInsets.only(left: 3.h),
                                 child: _buildLink(
-                                    imgLink: ImageConstant.imgLink,
-                                    invitationLink: "lbl_invitation_link".tr)),
+                                    imgLink: ImageConstant.imgAddUserMale,
+                                    invitationLink:"Sub agent invite")),
                           ),
+                          
                           SizedBox(height: 8.v),
+                          // GestureDetector(
+                          //   onTap: () {
+                          //     Get.lazyPut(() => InviteMembersScreen(),
+                          //         fenix: true);
+                          //     Get.to(() => InviteMembersScreen());
+                          //   },
+                          //   child: Padding(
+                          //       padding: EdgeInsets.only(left: 3.h),
+                          //       child: _buildLink(
+                          //           imgLink: ImageConstant.imgAddUserMale,
+                          //           invitationLink: "lbl_invite_members".tr)),
+                          // ),
+                          // SizedBox(height: 8.v),
+                        
+                           SizedBox(height: 8.v),
                           GestureDetector(
-                            onTap: (){
-                               Get.lazyPut(() => MembersActiveDaysScreen(), fenix: true);
-                  Get.to(MembersActiveDaysScreen());
+                            onTap: () {
+                              Get.lazyPut(() => MembersActiveDaysScreen(),
+                                  fenix: true);
+                              Get.to(MembersActiveDaysScreen());
                             },
                             child: Padding(
                                 padding: EdgeInsets.only(left: 3.h),
@@ -68,6 +111,19 @@ class AgencyScreen extends GetWidget<AgencyController> {
                                     invitationLink:
                                         "msg_members_active_days".tr)),
                           ),
+                          // GestureDetector(
+                          //   onTap: () {
+                          //     Get.lazyPut(() => InvitationTwoScreen(),
+                          //         fenix: true);
+                          //     Get.to(InvitationTwoScreen());
+                          //   },
+                          //   child: Padding(
+                          //       padding: EdgeInsets.only(left: 3.h),
+                          //       child: _buildLink(
+                          //           imgLink: ImageConstant.imgLink,
+                          //           invitationLink: "lbl_invitation_link".tr)),
+                          // )/,
+                         
                           SizedBox(height: 939.v),
                           CustomElevatedButton(
                               text: "lbl_post".tr,
@@ -82,16 +138,21 @@ class AgencyScreen extends GetWidget<AgencyController> {
     return CustomAppBar(
         leadingWidth: 44.h,
         height: 50,
-        leading:  GestureDetector(
-          onTap: (){
+        leading: GestureDetector(
+          onTap: () {
             onTapArrowLeft();
           },
-          child: Icon(Icons.arrow_back_ios,color: Colors.black,
-          
+          child: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.black,
           ),
         ),
         centerTitle: true,
-        title: Text("lbl_agency".tr,style: TextStyle(color: Colors.black,fontSize:23,fontWeight: FontWeight.bold),));
+        title: Text(
+          "lbl_agency".tr,
+          style: TextStyle(
+              color: Colors.black, fontSize: 23, fontWeight: FontWeight.bold),
+        ));
   }
 
   /// Section Widget
@@ -211,9 +272,10 @@ class AgencyScreen extends GetWidget<AgencyController> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   GestureDetector(
-                                    onTap: (){
-                                       Get.lazyPut(() => MembersIncomeScreen(), fenix: true);
-                  Get.to(MembersIncomeScreen());
+                                    onTap: () {
+                                      Get.lazyPut(() => MembersIncomeScreen(),
+                                          fenix: true);
+                                      Get.to(MembersIncomeScreen());
                                     },
                                     child: Text("lbl_member_income".tr,
                                         style: CustomTextStyles

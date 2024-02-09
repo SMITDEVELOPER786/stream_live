@@ -24,49 +24,46 @@ class ExplorePage extends StatelessWidget {
             width: double.maxFinite,
             decoration: AppDecoration.style,
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 // 
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: GestureDetector(
+                                      onTap: () {
+                                        Get.lazyPut(() => CountriesScreen(),
+                                            fenix: true);
+                                        Get.toNamed(AppRoutes.countriesScreen);
+                                      },
+                                      child: Container(
+                                        padding: EdgeInsets.all(2),
+                                        decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: const Color.fromARGB(
+                                                255, 238, 240, 241),
+                                            width: 0.0,
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(10.0),
+                                        ),
+                                        child: Image.asset(
+                                          ImageConstant.imgClose16x16,
+                                          width: 25,
+                                          height: 25,
+                                        ),
+                                      ),
+                                    ),
+                  ),
+
                 Align(
                   alignment: Alignment.bottomLeft,
                   child: Padding(
                     padding: EdgeInsets.only(right: 20.h),
                     child: Column(
                       children: [
-                        GestureDetector(
-                        onTap: (){
-                             Get.lazyPut(() => CountriesScreen(), fenix: true);
-                  Get.toNamed(AppRoutes.countriesScreen);
-                        },
-                         child: CustomDropDown(
-                            width: 50.h,
-                            icon: Container(
-                              margin: EdgeInsets.fromLTRB(0.h, 0.v, 0.h, 3.v),
-                              child: CustomImageView(
-                                imagePath: ImageConstant.imgCheckmarkBlueGray40005,
-                                height: 16.adaptSize,
-                                width: 16.adaptSize,
-                              ),
-                            ),
-                            alignment: Alignment.centerRight,
-                            // items: controller
-                            //     .matchTwoModelObj.value.dropdownItemList!.value,
-                            prefix: Container(
-                              // margin: EdgeInsets.fromLTRB(7.h, 4.v, 26.h, 3.v),
-                              child: CustomImageView(
-                                imagePath: ImageConstant.imgClose16x16,
-                                height: 16.adaptSize,
-                                width: 16.adaptSize,
-                              ),
-                            ),
-                            // prefixConstraints: BoxConstraints(
-                            //   maxHeight: 23.v,
-                            // ),
-                            onChanged: (value) {
-                              controller.onSelected(value);
-                            },
-                          ),
-                       ),
-                        SizedBox(height: 8.v),
+                      
+                      SizedBox(height: 8.v),
                         Stack(
                           alignment: Alignment.topCenter,
                           children: [

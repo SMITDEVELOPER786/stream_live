@@ -7,10 +7,32 @@ class ImageConstant {
 
   static String img20240102092852 = '$imagePath/img_20240102_092852.png';
 
+   static String imgDlf1 = '$imagePath/img_dlf_1.png';
+
   static String img4419e6f092d05cc = '$imagePath/img_4419e6f092d05cc.png';
 
+  static String imgTreasureChest = '$imagePath/img_treasure_chest.png';
+static String imgMagnifyingglass = '$imagePath/img_magnifyingglass.png';
+  static String imgPlusBlack90001 = '$imagePath/img_plus_black_900_01.svg';
   // Onboarding One images
   static String imgRectangle6014 = '$imagePath/img_rectangle_6014.png';
+
+   // Fans images
+  static String imgPlayBlueGray100 = '$imagePath/img_play_blue_gray_100.png';
+
+  static String imgLinkedinLightBlue500 =
+      '$imagePath/img_linkedin_light_blue_500.svg';
+
+  static String imgTelevisionLightBlue50012x12 =
+      '$imagePath/img_television_light_blue_500_12x12.svg';
+
+  static String imgEllipse4684 = '$imagePath/img_ellipse_468_4.png';
+
+  static String imgEllipse4685 = '$imagePath/img_ellipse_468_5.png';
+
+  static String imgEllipse4686 = '$imagePath/img_ellipse_468_6.png';
+
+  static String imgEllipse4687 = '$imagePath/img_ellipse_468_7.png';
 
   static String imgRectangle6016 = '$imagePath/img_rectangle_6016.png';
 
@@ -100,6 +122,14 @@ class ImageConstant {
   static String img156820342911890x393 =
       '$imagePath/img_1568203_4291_1_890x393.png';
         static String imgTwitterLogo = '$imagePath/img_twitter_logo.svg';
+
+          static String Badge = '$imagePath/Badge.png';
+          static String Bubble = '$imagePath/Bubble.png';
+          static String Effects = '$imagePath/Effects.png';
+          static String Headewear = '$imagePath/Headewear.png';
+
+
+
 
         static String imgInstagramLogo = '$imagePath/img_instagram_logo.png';
   static String imgGroup1000001783 = '$imagePath/img_group_1000001783.png';
@@ -240,6 +270,9 @@ class ImageConstant {
   static String imgRectangle346249311 =
       '$imagePath/img_rectangle_34624931_1.png';
 
+
+      
+
   static String imgRectangle346249312 =
       '$imagePath/img_rectangle_34624931_2.png';
 
@@ -255,6 +288,18 @@ class ImageConstant {
   static String imgLockOnprimary = '$imagePath/img_lock_onprimary.svg';
 
   static String imgPngwing1122x119 = '$imagePath/img_pngwing_1_122x119.png';
+
+   static String imgMagnifyingGlas = '$imagePath/img_magnifying_glas.png';
+     static String imgPngwing3 = '$imagePath/img_pngwing_3.png';
+
+       static String imgPngegg11 = '$imagePath/img_pngegg_1_1.png';
+       static String img59591384Graph56x58 =
+      '$imagePath/img_59_591384_graph_56x58.png';
+
+      static String imgTelevisionGray70002 =
+      '$imagePath/img_television_gray_700_02.svg';
+        static String imgVector18x14 = '$imagePath/img_vector_18x14.png';
+        
 
   // Search images
   static String imgRewindBlueGray40002 =
@@ -589,7 +634,7 @@ class ImageConstant {
   // VIP Five images
   static String imgGroupPurple600 = '$imagePath/img_group_purple_600.svg';
 
-    static String imgVector7x5 = '$imagePath/img_vector_7x5.png';
+
 
   // Community One images
   static String imgRectangle8164x64 = '$imagePath/img_rectangle_81_64x64.png';
@@ -901,6 +946,8 @@ class ImageConstant {
 
   static String imgThumbsUpLightBlue50024x24 =
       '$imagePath/img_thumbs_up_light_blue_500_24x24.svg';
+
+        static String imgGroup3413 = '$imagePath/img_group_3413.png';
 
   static String imgComputer = '$imagePath/img_computer.svg';
 
@@ -1470,12 +1517,176 @@ class ImageConstant {
 
   static String imgTelevision16x16 = '$imagePath/img_television_16x16.svg';
 
+   static String imgVector55x32 = '$imagePath/img_vector_55x32.png';
+
+  static String imgVector50x29 = '$imagePath/img_vector_50x29.png';
+
+  static String imgArrowUp = '$imagePath/img_arrow_up.svg';
+
+  static String imgVector7x5 = '$imagePath/img_vector_7x5.png';
+  static String imgGroup5299 = '$imagePath/img_group_5299.svg';
+
+  static String imgVector7x21 = '$imagePath/img_vector_7x21.png';
+
+ 
+
+  static String imgVector65x26 = '$imagePath/img_vector_65x26.png';
+  static String imgLightBulb = '$imagePath/img_light_bulb.png';
+
   static String imgCalendarGray80002 =
       '$imagePath/img_calendar_gray_800_02.svg';
 
+  static String imgGroup46x111 = '$imagePath/img_group_46x111.png';
   static String imgSmall = '$imagePath/img_small.png';
+  static String imgVector17x13 = '$imagePath/img_vector_17x13.png';
+
+  static String imgVector5x16 = '$imagePath/img_vector_5x16.png';
+
+  static String imgVector47x27 = '$imagePath/img_vector_47x27.png';
+
+  static String imgVectorGray60004 = '$imagePath/img_vector_gray_600_04.svg';
+
+  static String imgSort = '$imagePath/img_sort.svg';
+
+  static String imgVectorWhiteA70001 =
+      '$imagePath/img_vector_white_a700_01.svg';
+
+  static String imgThumbsUpOrange80002 =
+      '$imagePath/img_thumbs_up_orange_800_02.svg';
+
+  static String imgVector26x13 = '$imagePath/img_vector_26x13.png';
+
+  static String imgSignalAmber70002 = '$imagePath/img_signal_amber_700_02.png';
 
   static String imgNoise = '$imagePath/img_noise.png';
 
   static String imageNotFound = 'assets/images/image_not_found.png';
+
+   static String imgKisspngProduct106x175 =
+      '$imagePath/img_kisspng_product_106x175.png';
+
+  // Family images
+  static String imgKisspngProduct1 = '$imagePath/img_kisspng_product_1.png';
+
+  // Family Two images
+  static String imgVector61x61 = '$imagePath/img_vector_61x61.png';
+
+  static String imgFavoriteBlack90006 =
+      '$imagePath/img_favorite_black_900_06.svg';
+
+  static String imgVector8x8 = '$imagePath/img_vector_8x8.png';
+
+  static String imgSettingsPink700 = '$imagePath/img_settings_pink_700.svg';
+
+  static String imgVector5x8 = '$imagePath/img_vector_5x8.png';
+
+  static String imgVectorPink700 = '$imagePath/img_vector_pink_700.svg';
+
+  static String imgVectorPink7003x4 = '$imagePath/img_vector_pink_700_3x4.svg';
+
+  static String imgVectorPink7002x7 = '$imagePath/img_vector_pink_700_2x7.svg';
+
+  static String imgVectorPink7001x5 = '$imagePath/img_vector_pink_700_1x5.svg';
+
+  static String imgVectorWhiteA700013x5 =
+      '$imagePath/img_vector_white_a700_01_3x5.svg';
+
+  static String imgUserWhiteA70001 = '$imagePath/img_user_white_a700_01.svg';
+
+  static String imgVectorWhiteA700011x3 =
+      '$imagePath/img_vector_white_a700_01_1x3.svg';
+
+  static String imgVectorWhiteA700014x1 =
+      '$imagePath/img_vector_white_a700_01_4x1.svg';
+
+  static String imgVectorDeepOrange400 =
+      '$imagePath/img_vector_deep_orange_400.svg';
+
+  static String imgVectorDeepOrange4001x3 =
+      '$imagePath/img_vector_deep_orange_400_1x3.svg';
+
+  static String imgVector4x3 = '$imagePath/img_vector_4x3.png';
+
+  static String imgVectorPink7001x3 = '$imagePath/img_vector_pink_700_1x3.svg';
+
+  static String imgVectorPink7003x3 = '$imagePath/img_vector_pink_700_3x3.svg';
+
+  static String imgVectorPink7002x2 = '$imagePath/img_vector_pink_700_2x2.svg';
+
+  static String imgVector22 = '$imagePath/img_vector_22.png';
+
+  static String imgVector1x3 = '$imagePath/img_vector_1x3.svg';
+
+  static String imgSettingsBlack90006 =
+      '$imagePath/img_settings_black_900_06.png';
+
+  static String imgVector21x19 = '$imagePath/img_vector_21x19.png';
+
+  static String imgSettingsDeepOrange700 =
+      '$imagePath/img_settings_deep_orange_700.svg';
+
+  static String imgVector22x19 = '$imagePath/img_vector_22x19.png';
+
+  static String imgTelevisionBlack90006 =
+      '$imagePath/img_television_black_900_06.png';
+
+  static String imgVectorPink7005x8 = '$imagePath/img_vector_pink_700_5x8.svg';
+
+  static String imgGroup45x47 = '$imagePath/img_group_45x47.png';
+
+  static String imgGroup47x56 = '$imagePath/img_group_47x56.png';
+
+  static String imgVector17x17 = '$imagePath/img_vector_17x17.png';
+
+  static String imgUserBlack90006 = '$imagePath/img_user_black_900_06.png';
+
+  static String imgVector15x15 = '$imagePath/img_vector_15x15.png';
+
+  static String imgSettingsPink900 = '$imagePath/img_settings_pink_900.svg';
+
+  static String imgVector26x12 = '$imagePath/img_vector_26x12.png';
+
+  static String imgVector23 = '$imagePath/img_vector_23.png';
+
+  static String imgVector15x7 = '$imagePath/img_vector_15x7.png';
+
+  static String imgVectorPink7009x3 = '$imagePath/img_vector_pink_700_9x3.svg';
+
+  static String imgVectorPink7002x6 = '$imagePath/img_vector_pink_700_2x6.svg';
+
+  static String imgSettingsPink70012x6 =
+      '$imagePath/img_settings_pink_700_12x6.svg';
+
+  static String imgVectorLightGreen5001 =
+      '$imagePath/img_vector_light_green_50_01.svg';
+
+  static String imgSettingsYellow50 = '$imagePath/img_settings_yellow_50.svg';
+
+  static String imgVectorPink90001 = '$imagePath/img_vector_pink_900_01.svg';
+
+  static String imgVectorWhiteA700011x2 =
+      '$imagePath/img_vector_white_a700_01_1x2.svg';
+
+  static String imgVector7x7 = '$imagePath/img_vector_7x7.png';
+
+  static String imgVector24 = '$imagePath/img_vector_24.svg';
+
+  static String imgVector3x4 = '$imagePath/img_vector_3x4.png';
+
+  
+
+  static String imgVector6x3 = '$imagePath/img_vector_6x3.png';
+
+  static String imgVector10x4 = '$imagePath/img_vector_10x4.png';
+
+  static String imgVectorDeepOrange4002x1 =
+      '$imagePath/img_vector_deep_orange_400_2x1.svg';
+        static String imgEllipse46850x50 = '$imagePath/img_ellipse_468_50x50.png';
+
+  static String imgVector25 = '$imagePath/img_vector_25.svg';
+
+  static String imgVectorPink70010x3 =
+      '$imagePath/img_vector_pink_700_10x3.svg';
+  static String imgKisspngProduct = '$imagePath/img_kisspng_product.png';
+  static String imgLaurelWreath = '$imagePath/img_laurel_wreath.png';
 }

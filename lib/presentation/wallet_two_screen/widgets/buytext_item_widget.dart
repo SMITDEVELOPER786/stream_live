@@ -20,7 +20,8 @@ class BuytextItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 145.h,
+      width: 165.h,
+      height: 100,
       child: Align(
         alignment: Alignment.centerRight,
         child: OutlineGradientButton(
@@ -70,9 +71,8 @@ class BuytextItemWidget extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Obx(
-                      () => CustomImageView(
-                        imagePath: buytextItemModelObj.closeImage!.value,
+              CustomImageView(
+                        imagePath: ImageConstant.imgPngegg51,
                         height: 15.v,
                         width: 32.h,
                         margin: EdgeInsets.only(
@@ -80,7 +80,7 @@ class BuytextItemWidget extends StatelessWidget {
                           bottom: 4.v,
                         ),
                       ),
-                    ),
+                    
                     Obx(
                       () => Text(
                         buytextItemModelObj.twentyText!.value,

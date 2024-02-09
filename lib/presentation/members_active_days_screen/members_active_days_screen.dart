@@ -49,6 +49,7 @@ class _MembersActiveDaysScreenState extends State<MembersActiveDaysScreen> {
   /// Section Widget
   PreferredSizeWidget _buildAppBar() {
     return CustomAppBar(
+      height: 50,
         leadingWidth: 44.h,
         leading:  GestureDetector(
           onTap: (){

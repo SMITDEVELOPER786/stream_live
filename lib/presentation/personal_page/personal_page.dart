@@ -1,5 +1,9 @@
 import 'package:muhammad_zubair_s_application3/presentation/agency_screen/agency_screen.dart';
 import 'package:muhammad_zubair_s_application3/presentation/chat_price_screen/chat_price_screen.dart';
+import 'package:muhammad_zubair_s_application3/presentation/creator_center_tab_container_screen/creator_center_tab_container_screen.dart';
+import 'package:muhammad_zubair_s_application3/presentation/fan_group_screen/fan_group_screen.dart';
+import 'package:muhammad_zubair_s_application3/presentation/followers_screen/followers_screen.dart';
+import 'package:muhammad_zubair_s_application3/presentation/following_screen/following_screen.dart';
 import 'package:muhammad_zubair_s_application3/presentation/help_and_feedback_screen/help_and_feedback_screen.dart';
 import 'package:muhammad_zubair_s_application3/presentation/level_screen/level_screen.dart';
 import 'package:muhammad_zubair_s_application3/presentation/mall_screen/mall_screen.dart';
@@ -11,11 +15,16 @@ import 'package:muhammad_zubair_s_application3/presentation/rank_one_tab_contain
 import 'package:muhammad_zubair_s_application3/presentation/ranking_page/ranking_page.dart';
 import 'package:muhammad_zubair_s_application3/presentation/ranking_tab_container_screen/ranking_tab_container_screen.dart';
 import 'package:muhammad_zubair_s_application3/presentation/settings_screen/settings_screen.dart';
+import 'package:muhammad_zubair_s_application3/presentation/tabs.dart';
+import 'package:muhammad_zubair_s_application3/presentation/vip_tab_container_screen/vip_tab_container_screen.dart';
+import 'package:muhammad_zubair_s_application3/presentation/wallet_tab_container_screen/wallet_tab_container_screen.dart';
 import 'package:muhammad_zubair_s_application3/widgets/app_bar/appbar_leading_image.dart';
 import 'package:muhammad_zubair_s_application3/widgets/app_bar/appbar_trailing_button_two.dart';
 import 'package:muhammad_zubair_s_application3/widgets/app_bar/custom_app_bar.dart';
 
 import '../../widgets/app_bar/appbar_subtitle_one.dart';
+import '../fans_screen/fans_screen.dart';
+import '../my_chat_view/my_chat_view.dart';
 import 'controller/personal_controller.dart';
 import 'models/personal_model.dart';
 import 'package:flutter/material.dart';
@@ -134,30 +143,35 @@ class PersonalPage extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Padding(
-                            padding: EdgeInsets.only(bottom: 2.v),
-                            child: Column(
-                              children: [
-                                Text(
-                                  "lbl_10k".tr,
-                                  style: TextStyle(
-                                    color: appTheme.gray80002,
-                                    fontSize: 16.fSize,
-                                    fontFamily: 'Inter',
-                                    fontWeight: FontWeight.w500,
+                          GestureDetector(
+                            onTap: (){  
+                               Get.lazyPut(()=>FollowersScreen());
+                              Get.to(()=>FollowersScreen());},
+                            child: Padding(
+                              padding: EdgeInsets.only(bottom: 2.v),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "lbl_10k".tr,
+                                    style: TextStyle(
+                                      color: appTheme.gray80002,
+                                      fontSize: 16.fSize,
+                                      fontFamily: 'Inter',
+                                      fontWeight: FontWeight.w500,
+                                    ),
                                   ),
-                                ),
-                                SizedBox(height: 7.v),
-                                Text(
-                                  "lbl_friends".tr,
-                                  style: TextStyle(
-                                    color: appTheme.gray50022,
-                                    fontSize: 12.fSize,
-                                    fontFamily: 'Inter',
-                                    fontWeight: FontWeight.w400,
+                                  SizedBox(height: 7.v),
+                                  Text(
+                                    "lbl_friends".tr,
+                                    style: TextStyle(
+                                      color: appTheme.gray50022,
+                                      fontSize: 12.fSize,
+                                      fontFamily: 'Inter',
+                                      fontWeight: FontWeight.w400,
+                                    ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                           Padding(
@@ -171,30 +185,37 @@ class PersonalPage extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Padding(
-                            padding: EdgeInsets.only(left: 29.h),
-                            child: Column(
-                              children: [
-                                Text(
-                                  "lbl_200k".tr,
-                                  style: TextStyle(
-                                    color: appTheme.gray80002,
-                                    fontSize: 16.fSize,
-                                    fontFamily: 'Inter',
-                                    fontWeight: FontWeight.w500,
+                          GestureDetector(
+                            onTap: (){
+                              Get.lazyPut(()=>FollowingScreen());
+                              Get.to(()=>FollowingScreen());
+
+                            },
+                            child: Padding(
+                              padding: EdgeInsets.only(left: 29.h),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "lbl_200k".tr,
+                                    style: TextStyle(
+                                      color: appTheme.gray80002,
+                                      fontSize: 16.fSize,
+                                      fontFamily: 'Inter',
+                                      fontWeight: FontWeight.w500,
+                                    ),
                                   ),
-                                ),
-                                SizedBox(height: 9.v),
-                                Text(
-                                  "lbl_following".tr,
-                                  style: TextStyle(
-                                    color: appTheme.gray50022,
-                                    fontSize: 12.fSize,
-                                    fontFamily: 'Inter',
-                                    fontWeight: FontWeight.w400,
+                                  SizedBox(height: 9.v),
+                                  Text(
+                                    "lbl_following".tr,
+                                    style: TextStyle(
+                                      color: appTheme.gray50022,
+                                      fontSize: 12.fSize,
+                                      fontFamily: 'Inter',
+                                      fontWeight: FontWeight.w400,
+                                    ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                           Padding(
@@ -209,30 +230,37 @@ class PersonalPage extends StatelessWidget {
                             ),
                           ),
                           Spacer(),
-                          Padding(
-                            padding: EdgeInsets.only(bottom: 2.v),
-                            child: Column(
-                              children: [
-                                Text(
-                                  "lbl_20m".tr,
-                                  style: TextStyle(
-                                    color: appTheme.gray80002,
-                                    fontSize: 16.fSize,
-                                    fontFamily: 'Inter',
-                                    fontWeight: FontWeight.w500,
+                          GestureDetector(
+                            onTap: (){
+                              Get.lazyPut(() => FansScreen());
+                              Get.to(() => FansScreen());
+
+                            },
+                            child: Padding(
+                              padding: EdgeInsets.only(bottom: 2.v),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "lbl_20m".tr,
+                                    style: TextStyle(
+                                      color: appTheme.gray80002,
+                                      fontSize: 16.fSize,
+                                      fontFamily: 'Inter',
+                                      fontWeight: FontWeight.w500,
+                                    ),
                                   ),
-                                ),
-                                SizedBox(height: 8.v),
-                                Text(
-                                  "lbl_fans".tr,
-                                  style: TextStyle(
-                                    color: appTheme.gray50022,
-                                    fontSize: 12.fSize,
-                                    fontFamily: 'Inter',
-                                    fontWeight: FontWeight.w400,
+                                  SizedBox(height: 8.v),
+                                  Text(
+                                    "lbl_fans".tr,
+                                    style: TextStyle(
+                                      color: appTheme.gray50022,
+                                      fontSize: 12.fSize,
+                                      fontFamily: 'Inter',
+                                      fontWeight: FontWeight.w400,
+                                    ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                         ],
@@ -438,6 +466,9 @@ class PersonalPage extends StatelessWidget {
                   SizedBox(height: 15.v),
                   GestureDetector(
                     onTap: (){
+                      Get.lazyPut(() => CreatorCenterTabContainerScreen());
+                      Get.to(() => CreatorCenterTabContainerScreen());
+
                       
                     },
                     child: Padding(
@@ -494,19 +525,26 @@ class PersonalPage extends StatelessWidget {
                             imagePath: ImageConstant.imgSearchLightBlue500,
                           ),
                         ),
-                        Padding(
-                          padding: EdgeInsets.only(
-                            left: 8.h,
-                            top: 10.v,
-                            bottom: 8.v,
-                          ),
-                          child: Text(
-                            "lbl_my_cards".tr,
-                            style: TextStyle(
-                              color: appTheme.gray80002,
-                              fontSize: 14.fSize,
-                              fontFamily: 'Inter',
-                              fontWeight: FontWeight.w500,
+                        GestureDetector(
+                          onTap: (){
+                            Get.lazyPut(() => MyChatCardView());
+                            Get.to(() => MyChatCardView());
+
+                          },
+                          child: Padding(
+                            padding: EdgeInsets.only(
+                              left: 8.h,
+                              top: 10.v,
+                              bottom: 8.v,
+                            ),
+                            child: Text(
+                              "lbl_my_cards".tr,
+                              style: TextStyle(
+                                color: appTheme.gray80002,
+                                fontSize: 14.fSize,
+                                fontFamily: 'Inter',
+                                fontWeight: FontWeight.w500,
+                              ),
                             ),
                           ),
                         ),
@@ -570,7 +608,7 @@ class PersonalPage extends StatelessWidget {
                   SizedBox(height: 15.v),
                   GestureDetector(
                        onTap: (){
-                     Get.to(()=>RankingTabContainerScreen());
+                     Get.to(()=>tabs());
                     },
                     child: Padding(
                       padding: EdgeInsets.only(left: 21.h),
@@ -766,9 +804,16 @@ class PersonalPage extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            _buildSettingsColumn(
-              settingsImage: ImageConstant.imgUserYellow80002,
-              levelText: "lbl_vip_center".tr,
+            GestureDetector(
+              onTap: (){
+                   Get.lazyPut(() => VipTabContainerScreen(), fenix: true);
+                  Get.to(()=>VipTabContainerScreen());
+              },
+              child: _buildSettingsColumn(
+                
+                settingsImage: ImageConstant.imgUserYellow80002,
+                levelText: "lbl_vip_center".tr,
+              ),
             ),
             GestureDetector(
               onTap: (){
@@ -786,9 +831,17 @@ class PersonalPage extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.only(left: 15.h),
-              child: _buildSettingsColumn(
-                settingsImage: ImageConstant.imgThumbsUpDeepPurpleA20001,
-                levelText: "lbl_my_earnings".tr,
+              child: GestureDetector(
+                onTap: (){
+                  Get.lazyPut(()=>AppRoutes.walletTabContainerScreen);
+                Get.toNamed(AppRoutes.walletTabContainerScreen);
+
+                },
+                child: _buildSettingsColumn(
+                  
+                  settingsImage: ImageConstant.imgThumbsUpDeepPurpleA20001,
+                  levelText: "lbl_my_earnings".tr,
+                ),
               ),
             ),
           ],

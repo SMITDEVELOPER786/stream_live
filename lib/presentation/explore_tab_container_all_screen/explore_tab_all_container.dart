@@ -57,18 +57,21 @@ class _ExploreAlltabState extends State<ExploreAlltab> {
           ),
         ),
         bottomNavigationBar: _buildTabBottomAppBar(),
-        floatingActionButton: CustomFloatingButton(
-           onTap: (){
-              controllerF.setBottomIndex(0,true);
-            
-                Get.to(()=>ExploreAlltab());
-            },
-          height: 48,
-          width: 48,
-          child: CustomImageView(
-            imagePath: ImageConstant.imgUploadGray5001,
-            height: 24.0.v,
-            width: 24.0.h,
+        floatingActionButton: Padding(
+   padding: const EdgeInsets.only(left:20.0,top: 20),
+          child: CustomFloatingButton(
+             onTap: (){
+                controllerF.setBottomIndex(0,true);
+              
+                  Get.to(()=>ExploreAlltab());
+              },
+            height: 48,
+            width: 48,
+            child: CustomImageView(
+              imagePath: ImageConstant.imgUploadGray5001,
+              height: 24.0.v,
+              width: 24.0.h,
+            ),
           ),
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
